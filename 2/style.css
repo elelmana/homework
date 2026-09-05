@@ -1,0 +1,36 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: bisque;
+}
+fieldset {
+  display: inline;
+  margin: 30px;
+  padding: 15px 35px 10px 10px;
+  border: 3px solid rgb(149, 148, 148);
+  border-radius: 5px;
+  background-color: aliceblue;
+}
+label{
+  margin-bottom: 5px;
+}
+label, input, textarea {
+  display: block;
+}
+.title {
+  font-weight: 600;
+}
+textarea {
+  resize: vertical;
+  max-height: 120px;
+  min-height: 35px;
+}
+.rules {
+  display: inline-flex;
+}
+.rules-confirm {
+  cursor: pointer;
+}
+button {
+  display: block;
+  cursor: pointer;
+}
