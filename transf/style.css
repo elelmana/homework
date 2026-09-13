@@ -1,0 +1,102 @@
+ * {
+  box-sizing: border-box;
+
+}
+
+html {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+fieldset {
+  display: inline;
+  margin: 30px;
+  padding: 25px 45px 20px 20px;
+  border: 3px solid rgb(149, 148, 148);
+  border-radius: 5px;
+  background-color: aliceblue;
+  width: 300px;
+  max-width: 100%;
+  scale: 1.2;
+}
+span {
+  display: block;
+  margin-bottom: 10px;
+}
+label {
+  margin-bottom: 12px;
+}
+input:not(.rules-confirm), textarea {
+  width: 100%;
+}
+
+label, input, textarea {
+  display: block;
+}
+
+.title {
+  font-weight: 600;
+}
+
+textarea {
+  resize: vertical;
+  max-height: 120px;
+  min-height: 35px;
+}
+
+.rules {
+  display: inline-flex;
+  padding-left: 22px;
+}
+
+.rules-confirm {
+  cursor: pointer;
+  appearance: none;
+  outline: none;
+}
+.rules-confirm::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin-left: -22px;
+}
+.rules-confirm:checked::after {
+  background: url(./check-icon.svg) center no-repeat, #c5cc008b
+}
+
+
+button {
+  display: block;
+  cursor: pointer;
+  background-color: #f8ff1e;
+  border: 2px solid #b5d500;
+  border-radius: 4px;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out, scale 0.2s ease-in-out;
+}
+button:hover {
+  opacity: 0.8;
+  visibility: visible;
+  scale: 1.02;
+}
+button:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+input:not(.rules-confirm):focus-visible, textarea:focus-visible, button:focus-visible,
+.rules-confirm:focus-visible::after {
+  outline: 2px solid #9ef90b;
+  outline-offset: 1px;
+}
