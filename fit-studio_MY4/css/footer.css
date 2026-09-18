@@ -1,0 +1,39 @@
+.footer {
+  background-image:linear-gradient(90deg, rgba(73, 169, 255, 0.2) 0%, rgba(252, 124, 217, 0.2) 100%);
+  text-align: center;
+  margin-top: auto;
+}
+.footer-top {
+  padding-top: 60px;
+  
+}
+.footer-logo {
+  padding-bottom: 40px;
+  display: inline-block ;
+}
+.menu ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+}
+.menu a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755; 
+  text-decoration: none;
+  transition: color 0.2s
+}
+.menu a:hover {
+  color: #3596ED;
+  
+}
+.container-f {
+  border-top: 1px solid #d3cbd9;
+  padding: 40px 0;
+}
