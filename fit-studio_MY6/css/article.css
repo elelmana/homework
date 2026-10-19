@@ -1,0 +1,149 @@
+
+
+.article-title {
+  max-width: 596px;
+  margin: 0 0 40px;
+  font-family: Oswald, sans-serif;
+  font-weight: 600;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+}
+
+.article-title-large {
+  font-size: 48px;
+}
+
+.article-title-small {
+  font-size: 36px;
+}
+
+.article-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+  margin-bottom: 20px;
+}
+
+.article-bottom {
+  margin-bottom: 80px;
+}
+
+.article-decor-wrapper {
+  position: relative;
+}
+
+.container img {
+  height: auto;
+}
+
+.button-playback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: none;
+  background-color: #3596ED;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  cursor: pointer;
+  -webkit-transition:background-color 0.2s;
+  transition:background-color 0.2s;
+}
+.button-playback:hover {
+  background-color: #379ff9;
+}
+.button-playback:not(:disabled):active {
+  background-color:#2a7cc4;
+}
+
+
+.article-decor-wrapper-1::before {
+  top: 100px;
+  left: 0;
+}
+
+.article-decor-wrapper-2::before {
+  right: 0;
+  bottom: 136px;
+}
+
+
+.article-item {
+  margin-left: 16px;
+  padding: 0;
+}
+
+.article-items::marker {
+  font-size: 22px;
+  color: #3596ED;
+}
+
+.article-video {
+  margin-bottom: 40px;
+  max-width: 100%;
+}
+
+@media (width <= 992px) {
+  .article-bottom {
+    margin-bottom: 60px;
+  }
+}
+
+@media (width <= 768px) {
+  .article-bottom {
+    margin-bottom: 52px;
+  }
+  .article-decor-wrapper-1::before {
+  display: none;
+  }
+  .article-decor-wrapper-2::before {
+  display: none;
+  }
+  .article-title {
+    margin-bottom: 34px;
+  }
+  .article-title-large {
+    font-size: 42px;
+  }
+  .article-title-small {
+    font-size: 32px;
+  }
+}
+
+@media (width <= 576px) {
+  .article-bottom {
+    margin-bottom: 42px;
+  }
+  .article-title {
+    margin-bottom: 24px;
+  }
+  .article-title-large {
+    font-size: 36px;
+  }
+  .article-title-small {
+    font-size: 28px;
+  }
+  .button-playback {
+    width: 40px;
+    height: 40px;
+  }
+  .button-playback svg {
+    width: 16px;
+    height: 16px;
+  }
+}
