@@ -1,0 +1,101 @@
+<!doctype html>
+<html
+  class="page"
+  lang="ru"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/index.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./icons/free-icon-wind-14282113.png"
+      type="image/png"
+    />
+    <script
+      src="./js/index.js"
+      type="module"
+    ></script>
+    <title>Фен dyson</title>
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="container header__container">
+        <button class="header__burger burger"
+              aria-label="Открыть меню"
+              aria-expanded="false"
+              aria-controls="header__menu">
+          <svg width="40" height="40">
+            <use class="burger__icon-menu" href="./icons/sprite.svg#burger"></use>
+            <use class="burger__icon-menu-open" href="./icons/sprite.svg#burger-open"></use>
+          </svg>
+        </button>
+        <img
+          width="183"
+          height="77"
+          src="./icons/лого (1).png"
+          alt="Логотип dyson"
+          class="header__logo"
+        />
+        <nav
+          class="header__menu"
+          aria-label="Главное меню"
+        >
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a
+                href="#about"
+                class="menu__item-link"
+              >О нас</a>
+            </li>
+            <li class="menu-item">
+              <a
+                href="#delivery"
+                class="menu__item-link"
+              >Доставка и оплата</a>
+            </li>
+            <li class="menu-item">
+              <a
+                href="#sign-in"
+                class="menu__item-link"
+              >Регистрация продукта</a>
+            </li>
+            <li class="menu-item">
+              <a
+                href="#service"
+                class="menu__item-link"
+              >Сервис</a>
+            </li>
+            <li class="menu-item">
+              <a
+                href="#licensec"
+                class="menu__item-link"
+              >Сертификаты и лицензии</a>
+            </li>
+          </ul>
+        </nav>
+        <button
+          class="header__actions-button"
+          aria-label="корзина"
+          title="Корзина"
+        >
+          <svg
+            width="36"
+            height="36"
+          >
+            <use
+              href="./icons/sprite.svg#cart"
+              class="header__actions-icon"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+  </body>
+</html>

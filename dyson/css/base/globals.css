@@ -1,0 +1,26 @@
+.page {
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+.page__body {
+  min-width: 375px;
+  background-color: var(--bg-color);
+}
+
+.page__body--no-scroll {
+  overflow-y: hidden;
+}
+
+.container {
+  max-width: var(--container-width);
+  padding-inline: var(--container-padding);
+  margin-inline: auto;
+}
+
+a:focus-visible, 
+button:focus-visible {
+  outline-color: var(--accent-color);
+  outline-offset: 2px;
+}
+
