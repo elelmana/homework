@@ -24,3 +24,33 @@ button:focus-visible {
   outline-offset: 2px;
 }
 
+.title-46fz {
+  font-family: var(--font-family-namu);
+  font-weight: 900;
+  font-size: 46px;
+  font-style: normal;
+  line-height: 100%;
+}
+.title-42fz {
+  font-family: var(--font-family-namu);
+  font-weight: 900;
+  font-size: 42px;
+  font-style: normal;
+  line-height: 100%;
+}
+.title-30fz {
+  font-family: var(--font-family-namu);
+  font-weight: 900;
+  font-size: 30px;
+  font-style: normal;
+  line-height: 100%;
+}
+
+.text {
+  font-family: var(--font-family-sans);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 100%;
+
+}
+

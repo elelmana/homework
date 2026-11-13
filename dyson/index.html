@@ -27,13 +27,24 @@
   <body class="page__body">
     <header class="header">
       <div class="container header__container">
-        <button class="header__burger burger"
-              aria-label="Открыть меню"
-              aria-expanded="false"
-              aria-controls="header__menu">
-          <svg width="40" height="40">
-            <use class="burger__icon-menu" href="./icons/sprite.svg#burger"></use>
-            <use class="burger__icon-menu-open" href="./icons/sprite.svg#burger-open"></use>
+        <button
+          class="header__burger burger"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          aria-controls="header__menu"
+        >
+          <svg
+            width="40"
+            height="40"
+          >
+            <use
+              class="burger__icon-menu"
+              href="./icons/sprite.svg#burger"
+            ></use>
+            <use
+              class="burger__icon-menu-open"
+              href="./icons/sprite.svg#burger-open"
+            ></use>
           </svg>
         </button>
         <img
@@ -52,31 +63,36 @@
               <a
                 href="#about"
                 class="menu__item-link"
-              >О нас</a>
+                >О нас</a
+              >
             </li>
             <li class="menu-item">
               <a
                 href="#delivery"
                 class="menu__item-link"
-              >Доставка и оплата</a>
+                >Доставка и оплата</a
+              >
             </li>
             <li class="menu-item">
               <a
                 href="#sign-in"
                 class="menu__item-link"
-              >Регистрация продукта</a>
+                >Регистрация продукта</a
+              >
             </li>
             <li class="menu-item">
               <a
                 href="#service"
                 class="menu__item-link"
-              >Сервис</a>
+                >Сервис</a
+              >
             </li>
             <li class="menu-item">
               <a
                 href="#licensec"
                 class="menu__item-link"
-              >Сертификаты и лицензии</a>
+                >Сертификаты и лицензии</a
+              >
             </li>
           </ul>
         </nav>
@@ -97,5 +113,492 @@
         </button>
       </div>
     </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero__container">
+            <h1 class="hero__title title-46fz">
+              Уникальные&nbsp;технологии для ухода за волосами
+            </h1>
+            <p class="hero__text text">
+              Идеальная укладка для всех типов волос вместе с Dyson
+            </p>
+            <button class="hero__button text">Подробнее</button>
+            <picture>
+              <img
+                class="hero__img"
+                width="745"
+                height="803"
+                src="./images/woman-with-dyson.png"
+                alt="Девушка держит в руках фен dyson и демонстрирует его эффективность"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="category">
+        <div class="container">
+          <div class="category__container">
+            <ul class="category__list">
+              <li class="category__item">
+                <a
+                  href="#"
+                  class="category__item-link"
+                  ><header class="category__item-header">
+                    <picture>
+                      <source srcset="./images/woman-with-styler.webp" />
+                      <img
+                        width="324"
+                        height="324"
+                        loading="lazy"
+                        src="./images/woman-with-styler.png"
+                        alt="Девушка в черно-белом цвете держит в руках стайлер dyson и выпрямляет себе волосы"
+                      />
+                    </picture>
+                  </header>
+                  <footer class="category__item-footer">
+                    <h4 class="item-title title-30fz">Акции</h4>
+                    <span class="item-more text"
+                      >Подробнее
+                      <svg
+                        class="item-arrow"
+                        width="34"
+                        height="34"
+                        viewBox="0 0 34 34"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_391_5478)">
+                          <path
+                            d="M27.2237 18.0372L3.03236 17.8319C2.58011 17.828 2.21793 17.4559 2.22643 17.0037C2.2348 16.558 2.60044 16.2022 3.04616 16.206L27.3725 16.4124L18.0366 6.40095C17.7287 6.07079 17.7468 5.55357 18.077 5.2457C18.4071 4.93783 18.9243 4.95589 19.2322 5.28604L29.7307 16.5443C30.1074 16.9482 30.0853 17.581 29.6814 17.9577L17.7599 29.0746C17.4332 29.3793 16.9213 29.3614 16.6165 29.0346C16.3118 28.7079 16.3297 28.196 16.6565 27.8912L27.2237 18.0372Z"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            fill="currentColor"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_391_5478">
+                            <rect
+                              width="24"
+                              height="24"
+                              fill="white"
+                              transform="translate(0 16.9706) rotate(-45)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span></footer
+                ></a>
+              </li>
+              <li class="category__item">
+                <a
+                  href="#"
+                  class="category__item-link"
+                  ><header class="category__item-header">
+                    <picture>
+                      <source srcset="./images/dyson.webp" />
+                      <img
+                        width="324"
+                        height="324"
+                        loading="lazy"
+                        src="./images/dyson.png"
+                        alt="фен dyson"
+                      />
+                    </picture>
+                  </header>
+                  <footer class="category__item-footer">
+                    <h4 class="item-title title-30fz">Фены</h4>
+                    <span class="item-more text"
+                      >Подробнее
+                      <svg
+                        class="item-arrow"
+                        width="34"
+                        height="34"
+                        viewBox="0 0 34 34"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_391_5478)">
+                          <path
+                            d="M27.2237 18.0372L3.03236 17.8319C2.58011 17.828 2.21793 17.4559 2.22643 17.0037C2.2348 16.558 2.60044 16.2022 3.04616 16.206L27.3725 16.4124L18.0366 6.40095C17.7287 6.07079 17.7468 5.55357 18.077 5.2457C18.4071 4.93783 18.9243 4.95589 19.2322 5.28604L29.7307 16.5443C30.1074 16.9482 30.0853 17.581 29.6814 17.9577L17.7599 29.0746C17.4332 29.3793 16.9213 29.3614 16.6165 29.0346C16.3118 28.7079 16.3297 28.196 16.6565 27.8912L27.2237 18.0372Z"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            fill="currentColor"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_391_5478">
+                            <rect
+                              width="24"
+                              height="24"
+                              fill="white"
+                              transform="translate(0 16.9706) rotate(-45)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span></footer
+                ></a>
+              </li>
+              <li class="category__item">
+                <a
+                  href="#"
+                  class="category__item-link"
+                  ><header class="category__item-header">
+                    <picture>
+                      <source srcset="./images/styler.webp" />
+                      <img
+                        width="324"
+                        height="324"
+                        loading="lazy"
+                        src="./images/styler.png"
+                        alt="стайлер dyson"
+                      />
+                    </picture>
+                  </header>
+                  <footer class="category__item-footer">
+                    <h4 class="item-title title-30fz">Стайлеры</h4>
+                    <span class="item-more text"
+                      >Подробнее
+                      <svg
+                        class="item-arrow"
+                        width="34"
+                        height="34"
+                        viewBox="0 0 34 34"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_391_5478)">
+                          <path
+                            d="M27.2237 18.0372L3.03236 17.8319C2.58011 17.828 2.21793 17.4559 2.22643 17.0037C2.2348 16.558 2.60044 16.2022 3.04616 16.206L27.3725 16.4124L18.0366 6.40095C17.7287 6.07079 17.7468 5.55357 18.077 5.2457C18.4071 4.93783 18.9243 4.95589 19.2322 5.28604L29.7307 16.5443C30.1074 16.9482 30.0853 17.581 29.6814 17.9577L17.7599 29.0746C17.4332 29.3793 16.9213 29.3614 16.6165 29.0346C16.3118 28.7079 16.3297 28.196 16.6565 27.8912L27.2237 18.0372Z"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            fill="currentColor"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_391_5478">
+                            <rect
+                              width="24"
+                              height="24"
+                              fill="white"
+                              transform="translate(0 16.9706) rotate(-45)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span></footer
+                ></a>
+              </li>
+              <li class="category__item">
+                <a
+                  href="#"
+                  class="category__item-link"
+                  ><header class="category__item-header">
+                    <picture>
+                      <source srcset="./images/rectifier.webp" />
+                      <img
+                        width="324"
+                        height="324"
+                        loading="lazy"
+                        src="./images/rectifier.png"
+                        alt="выпрямитель dyson"
+                      />
+                    </picture>
+                  </header>
+                  <footer class="category__item-footer">
+                    <h4 class="item-title title-30fz">Выпрямители</h4>
+                    <span class="item-more text"
+                      >Подробнее
+                      <svg
+                        class="item-arrow"
+                        width="34"
+                        height="34"
+                        viewBox="0 0 34 34"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_391_5478)">
+                          <path
+                            d="M27.2237 18.0372L3.03236 17.8319C2.58011 17.828 2.21793 17.4559 2.22643 17.0037C2.2348 16.558 2.60044 16.2022 3.04616 16.206L27.3725 16.4124L18.0366 6.40095C17.7287 6.07079 17.7468 5.55357 18.077 5.2457C18.4071 4.93783 18.9243 4.95589 19.2322 5.28604L29.7307 16.5443C30.1074 16.9482 30.0853 17.581 29.6814 17.9577L17.7599 29.0746C17.4332 29.3793 16.9213 29.3614 16.6165 29.0346C16.3118 28.7079 16.3297 28.196 16.6565 27.8912L27.2237 18.0372Z"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            fill="currentColor"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_391_5478">
+                            <rect
+                              width="24"
+                              height="24"
+                              fill="white"
+                              transform="translate(0 16.9706) rotate(-45)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span></footer
+                ></a>
+              </li>
+              <li class="category__item">
+                <a
+                  href="#"
+                  class="category__item-link"
+                  ><header class="category__item-header">
+                    <picture>
+                      <source srcset="./images/woman-with-styler.webp" />
+                      <img
+                        width="324"
+                        height="324"
+                        loading="lazy"
+                        src="./images/woman-with-styler.png"
+                        alt="Девушка в черно-белом цвете держит в руках стайлер dyson и выпрямляет себе волосы"
+                      />
+                    </picture>
+                  </header>
+                  <footer class="category__item-footer">
+                    <h4 class="item-title title-30fz">Акции</h4>
+                    <span class="item-more text"
+                      >Подробнее
+                      <svg
+                        class="item-arrow"
+                        width="34"
+                        height="34"
+                        viewBox="0 0 34 34"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_391_5478)">
+                          <path
+                            d="M27.2237 18.0372L3.03236 17.8319C2.58011 17.828 2.21793 17.4559 2.22643 17.0037C2.2348 16.558 2.60044 16.2022 3.04616 16.206L27.3725 16.4124L18.0366 6.40095C17.7287 6.07079 17.7468 5.55357 18.077 5.2457C18.4071 4.93783 18.9243 4.95589 19.2322 5.28604L29.7307 16.5443C30.1074 16.9482 30.0853 17.581 29.6814 17.9577L17.7599 29.0746C17.4332 29.3793 16.9213 29.3614 16.6165 29.0346C16.3118 28.7079 16.3297 28.196 16.6565 27.8912L27.2237 18.0372Z"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            fill="currentColor"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_391_5478">
+                            <rect
+                              width="24"
+                              height="24"
+                              fill="white"
+                              transform="translate(0 16.9706) rotate(-45)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span></footer
+                ></a>
+              </li>
+              <li class="category__item">
+                <a
+                  href="#"
+                  class="category__item-link"
+                  ><header class="category__item-header">
+                    <picture>
+                      <source srcset="./images/dyson.webp" />
+                      <img
+                        width="324"
+                        height="324"
+                        loading="lazy"
+                        src="./images/dyson.png"
+                        alt="фен dyson"
+                      />
+                    </picture>
+                  </header>
+                  <footer class="category__item-footer">
+                    <h4 class="item-title title-30fz">Фены</h4>
+                    <span class="item-more text"
+                      >Подробнее
+                      <svg
+                        class="item-arrow"
+                        width="34"
+                        height="34"
+                        viewBox="0 0 34 34"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_391_5478)">
+                          <path
+                            d="M27.2237 18.0372L3.03236 17.8319C2.58011 17.828 2.21793 17.4559 2.22643 17.0037C2.2348 16.558 2.60044 16.2022 3.04616 16.206L27.3725 16.4124L18.0366 6.40095C17.7287 6.07079 17.7468 5.55357 18.077 5.2457C18.4071 4.93783 18.9243 4.95589 19.2322 5.28604L29.7307 16.5443C30.1074 16.9482 30.0853 17.581 29.6814 17.9577L17.7599 29.0746C17.4332 29.3793 16.9213 29.3614 16.6165 29.0346C16.3118 28.7079 16.3297 28.196 16.6565 27.8912L27.2237 18.0372Z"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            fill="currentColor"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_391_5478">
+                            <rect
+                              width="24"
+                              height="24"
+                              fill="white"
+                              transform="translate(0 16.9706) rotate(-45)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span></footer
+                ></a>
+              </li>
+              <li class="category__item">
+                <a
+                  href="#"
+                  class="category__item-link"
+                  ><header class="category__item-header">
+                    <picture>
+                      <source srcset="./images/styler.webp" />
+                      <img
+                        width="324"
+                        height="324"
+                        loading="lazy"
+                        src="./images/styler.png"
+                        alt="стайлер dyson"
+                      />
+                    </picture>
+                  </header>
+                  <footer class="category__item-footer">
+                    <h4 class="item-title title-30fz">Стайлеры</h4>
+                    <span class="item-more text"
+                      >Подробнее
+                      <svg
+                        class="item-arrow"
+                        width="34"
+                        height="34"
+                        viewBox="0 0 34 34"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_391_5478)">
+                          <path
+                            d="M27.2237 18.0372L3.03236 17.8319C2.58011 17.828 2.21793 17.4559 2.22643 17.0037C2.2348 16.558 2.60044 16.2022 3.04616 16.206L27.3725 16.4124L18.0366 6.40095C17.7287 6.07079 17.7468 5.55357 18.077 5.2457C18.4071 4.93783 18.9243 4.95589 19.2322 5.28604L29.7307 16.5443C30.1074 16.9482 30.0853 17.581 29.6814 17.9577L17.7599 29.0746C17.4332 29.3793 16.9213 29.3614 16.6165 29.0346C16.3118 28.7079 16.3297 28.196 16.6565 27.8912L27.2237 18.0372Z"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            fill="currentColor"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_391_5478">
+                            <rect
+                              width="24"
+                              height="24"
+                              fill="white"
+                              transform="translate(0 16.9706) rotate(-45)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span></footer
+                ></a>
+              </li>
+              <li class="category__item">
+                <a
+                  href="#"
+                  class="category__item-link"
+                  ><header class="category__item-header">
+                    <picture>
+                      <source srcset="./images/rectifier.webp" />
+                      <img
+                        class="category__item-img"
+                        width="324"
+                        height="324"
+                        loading="lazy"
+                        src="./images/rectifier.png"
+                        alt="выпрямитель dyson"
+                      />
+                    </picture>
+                  </header>
+                  <footer class="category__item-footer">
+                    <h4 class="item-title title-30fz">Выпрямители</h4>
+                    <span class="item-more text"
+                      >Подробнее
+                      <svg
+                        class="item-arrow"
+                        width="34"
+                        height="34"
+                        viewBox="0 0 34 34"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_391_5478)">
+                          <path
+                            d="M27.2237 18.0372L3.03236 17.8319C2.58011 17.828 2.21793 17.4559 2.22643 17.0037C2.2348 16.558 2.60044 16.2022 3.04616 16.206L27.3725 16.4124L18.0366 6.40095C17.7287 6.07079 17.7468 5.55357 18.077 5.2457C18.4071 4.93783 18.9243 4.95589 19.2322 5.28604L29.7307 16.5443C30.1074 16.9482 30.0853 17.581 29.6814 17.9577L17.7599 29.0746C17.4332 29.3793 16.9213 29.3614 16.6165 29.0346C16.3118 28.7079 16.3297 28.196 16.6565 27.8912L27.2237 18.0372Z"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            fill="currentColor"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_391_5478">
+                            <rect
+                              width="24"
+                              height="24"
+                              fill="white"
+                              transform="translate(0 16.9706) rotate(-45)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span></footer
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <div class="about__container">
+            <!-- <h2 class="about-title-1">Базовый вектор развития</h2>
+            <p class="about-text-1">Фены Dyson универсальны. Они подходят для сушки разных типов волос. Насадки из комплекта помогают создавать укладки на любой вкус. Функциональность девайсов впечатляет не меньше, чем их уникальный дизайн.</p>
+            <h2 class="about-title-2">Базовый вектор развития</h2>
+            <p class="about-text-2">Фены Dyson универсальны. Они подходят для сушки разных типов волос. Насадки из комплекта помогают создавать укладки на любой вкус. Функциональность девайсов впечатляет не меньше, чем их уникальный дизайн.</p>
+            <h2 class="about-title-3">Базовый вектор развития</h2>
+            <p class="about-text-3">Фены Dyson универсальны. Они подходят для сушки разных типов волос. Насадки из комплекта помогают создавать укладки на любой вкус. Функциональность девайсов впечатляет не меньше, чем их уникальный дизайн.</p>
+            <h2 class="about-title-4">Базовый вектор развития</h2>
+            <p class="about-text-4">Фены Dyson универсальны. Они подходят для сушки разных типов волос. Насадки из комплекта помогают создавать укладки на любой вкус. Функциональность девайсов впечатляет не меньше, чем их уникальный дизайн.</p>
+            <h2 class="about-title-5">Базовый вектор развития</h2>
+            <p class="about-text-5">Фены Dyson универсальны. Они подходят для сушки разных типов волос. Насадки из комплекта помогают создавать укладки на любой вкус. Функциональность девайсов впечатляет не меньше, чем их уникальный дизайн.</p> -->
+            <h2 class="about__title title-42fz">
+              Мнение экспертов о технике Dyson
+            </h2>
+            <div class="about__container-text">
+              <p class="about__text text">
+                Сегодня многие стилисты и салоны красоты в своей работе
+                используют технику от Dyson.
+              </p>
+              <p class="about__text text">
+                Несмотря на высокую стоимость, техника Dyson помогает экономить.
+                Мастера тратят меньше времени на сушку и укладку волос,
+                благодаря чему успевают обслужить большее количество клиентов.
+                Также устройства от Dyson потребляют значительно меньше
+                электроэнергии, не теряя свою мощность.
+              </p>
+              <p class="about__text text">
+                Фены Dyson универсальны. Они подходят для сушки разных типов
+                волос. Насадки из комплекта помогают создавать укладки на любой
+                вкус. Функциональность девайсов впечатляет не меньше, чем их
+                уникальный дизайн.
+              </p>
+              <p class="about__text text">
+                Ведущие стилисты отмечают, что техника Dyson для ухода за
+                волосами идеально подходят для длительной работы за счет своей
+                эргономичности. А за счет бесшумности инновационного мотора
+                использование устройств стало максимально комфортным.
+              </p>
+            </div>
+            <picture class="about__img">
+              <source srcset="./images/woman-about.webp" />
+              <img
+              width="700"
+              height="700"
+              loading="lazy"
+                src="./images/woman-about.png"
+                alt="Девушка в черно-белом цвете показывает действие фена dyson с специальной насадкой на своих волосах"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

@@ -5,3 +5,6 @@
 
 @import "./block/header.css";
 @import "./block/burger.css";
+@import "./block/hero.css";
+@import "./block/category.css";
+@import "./block/about.css";

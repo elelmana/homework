@@ -1,0 +1,42 @@
+.about {
+  background-color: var(--main-color-grey);
+}
+
+.about__container {
+  padding: 150px 0 46px;
+  position: relative;
+}
+
+.about__title {
+  font-size: clamp(20px, 0.414rem + 3.57vw, 42px);
+}
+
+@media (width > 992px) {
+  .about__title {
+    margin-bottom: 40px;
+  }
+}
+@media (width <=992px) {
+  .about__title {
+    margin-bottom: 20px;
+  }
+}
+
+.about__text {
+  line-height: 140%;
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+.about__img {
+  position: absolute;
+  bottom: 0;
+  right: -5rem;
+  max-width: 700px;
+  max-height: 700px;
+}
+.about__img img {
+  width: clamp(200px, 40vw, 700px);
+  height: 100%;
+  display: block;
+}

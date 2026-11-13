@@ -1,0 +1,121 @@
+.category {
+  background-color: var(--main-color);
+}
+
+.category__container {
+  /* min-width 375px, max-width 1200px */
+  padding: clamp(31px, -1.443rem + 14.42vw, 150px) 0;
+}
+
+.category__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+@media (width <= 576px) {
+  .category__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.category__item {
+  box-shadow: 0 2px 21px 0 rgba(0, 0, 0, 0.05), 0 2px 21px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.category__item-link {
+  display: flex;
+  flex-direction: column;
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+}
+
+@media (any-hover: hover) {
+  .category__item-link:hover
+  .category__item-footer {
+    background-color: var(--black-color);
+    border-radius: 0 0 10px 10px;
+  }
+
+  .category__item-link:hover 
+  .item-title {
+    color: var(--main-color);
+  }
+
+  .category__item-link:hover
+  .item-more {
+    color: var(--main-color);
+  }
+}
+
+
+.category__item-header {
+  max-width: 325px;
+  max-height: 325px;
+  border-radius: 10px;
+}
+
+.categoty__item-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category__item-footer {
+  background-color: transparent;
+  padding: 20px 40px 30px;
+  transition: background-color var(--transition-time);
+}
+
+@media (width <= 576px) {
+  .category__item-footer {
+    padding:10px 42px 16px 12px;
+  }
+}
+
+.item-title {
+  /* minwidth 375px maxwidth 992px */
+  font-size: clamp(0.813rem, 0.167rem + 2.76vw, 1.875rem);
+  color: var(--black-color);
+  margin-bottom: 11px;
+  transition: color var(--transition-time);
+  text-align: left;
+}
+
+@media (width <=576px ) {
+  .item-title {
+    margin-bottom: 8px;
+  }
+}
+
+.item-more {
+  /* minwidth 375px maxwidth 992px */
+  font-size: clamp(10px, 0.194rem + 2.11vw, 24px);
+  color: var(--black-color);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  /* min-width 768 max-width 1220 */
+  gap: clamp(10px, -0.437rem + 2.21vw, 20px);
+  transition: color var(--transition-time);
+
+}
+
+.item-arrow {
+  width: 34px;
+  height: 34px;
+  color: currentColor;
+}
+
+@media (width <= 768px) {
+  .item-arrow {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
