@@ -41,7 +41,7 @@
   }
 
   .category__item-link:hover 
-  .item-title {
+  .category__item-title {
     color: var(--main-color);
   }
 
@@ -76,17 +76,18 @@
   }
 }
 
-.item-title {
+.category__item-title {
   /* minwidth 375px maxwidth 992px */
   font-size: clamp(0.813rem, 0.167rem + 2.76vw, 1.875rem);
   color: var(--black-color);
   margin-bottom: 11px;
   transition: color var(--transition-time);
   text-align: left;
+  display: inline-block;
 }
 
 @media (width <=576px ) {
-  .item-title {
+  .category__item-title {
     margin-bottom: 8px;
   }
 }

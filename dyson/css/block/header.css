@@ -98,7 +98,7 @@
     left: -100vw;
     bottom: 0;
     min-width: 297px;
-    z-index: var(--layer-2);
+    z-index: var(--layer-3);
     background-color: var(--black-color);
     box-shadow: 0 2.08px 21.31px 0 rgba(0, 0, 0, 0.95);
     opacity: 0;
@@ -137,6 +137,7 @@
   height: 36px;
   color: var(--main-color);
   transition: color var(--transition-time);
+  
 }
 
 @media (width <= 992px) {
