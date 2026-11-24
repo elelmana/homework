@@ -1,0 +1,106 @@
+.charasteristics__video {
+  position: relative;
+}
+
+@media (width > 576px) {
+  .charasteristics__video {
+    margin-bottom: 60px;
+  }
+}
+@media (width <= 576px) {
+  .charasteristics__video {
+    margin-bottom: 40px;
+  }
+}
+
+.charasteristics__video-preview {
+  border: 1px solid var(--main-color);
+  border-radius: 12px;
+}
+
+.charasteristics__video-link {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #2a2a2980;
+  border: 1px solid var(--main-color);
+  box-shadow:
+    var(--shadow-glow),
+    inset var(--shadow-glow);
+  transition:
+    box-shadow var(--transition-time),
+    border var(--transition-time);
+}
+
+@media (any-hover: hover) {
+  .charasteristics__video-link:hover {
+    border: 1px solid var(--accent-color);
+    box-shadow:
+      var(--shadow-accent-glow),
+      inset var(--shadow-accent-glow);
+  }
+}
+
+@media (width > 576px) {
+  .charasteristics__video-link {
+    width: 80px;
+    height: 80px;
+  }
+  .charasteristics__video-icon {
+    width: 17px;
+    height: 24px;
+    transform: translateX(2px);
+  }
+}
+@media (width <= 576px) {
+  .charasteristics__video-link {
+    width: 48px;
+    height: 48px;
+  }
+  .charasteristics__video-icon {
+    width: 10px;
+    height: 13px;
+    transform: translateX(2px);
+  }
+}
+
+.charasteristics__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+  gap: 40px 20px;
+}
+
+.charasteristics__card-icon {
+  margin-bottom: 4px;
+  transform: translateX(-8px);
+}
+
+@media (width > 576px) {
+  .charasteristics__card-icon {
+    width: 56px;
+    height: 56px;
+  }
+}
+@media (width <= 576px) {
+  .charasteristics__card-icon {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.charasteristics__card-title {
+  margin-bottom: 20px;
+}
+
+.charasteristics__card-desc {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 140%;
+  color: var(--main-color);
+}

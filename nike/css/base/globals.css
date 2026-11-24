@@ -48,6 +48,7 @@ button:focus-visible {
   }
 }
 
+.title-xs,
 .title-sm,
 .title-md {
   text-transform: uppercase;
@@ -67,6 +68,11 @@ button:focus-visible {
   font-family: var(--font-family);
   /* min-width 375 max-width 768 */
   font-size: clamp(24px, 1.023rem + 2.04vw, 32px);
+}
+
+.title-xs {
+  font-family: var(--font-family);
+  font-size: 18px;
 }
 
 .text-reg,
