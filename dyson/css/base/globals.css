@@ -18,10 +18,11 @@
   margin-inline: auto;
 }
 
-a:focus-visible, 
+input:focus-visible,
+a:focus-visible,
 button:focus-visible {
   outline-color: var(--accent-color);
-  outline-offset: 2px;
+  outline-offset: 4px;
 }
 
 .title-46fz {
@@ -51,6 +52,4 @@ button:focus-visible {
   font-weight: 400;
   font-style: normal;
   line-height: 100%;
-
 }
-
