@@ -3,9 +3,15 @@
 }
 
 .header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (width <= 992px) {
@@ -38,9 +44,15 @@
 }
 
 .menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (width >1200px) {
@@ -90,9 +102,14 @@
     min-width: 297px;
     z-index: var(--layer-3);
     background-color: var(--black-color);
-    box-shadow: 0 2.08px 21.31px 0 rgba(0, 0, 0, 0.95);
+    -webkit-box-shadow: 0 2.08px 21.31px 0 rgba(0, 0, 0, 0.95);
+            box-shadow: 0 2.08px 21.31px 0 rgba(0, 0, 0, 0.95);
     opacity: 0;
     visibility: hidden;
+    -webkit-transition:
+      left var(--transition-time),
+      opacity var(--transition-time),
+      visibility var(--transition-time);
     transition:
       left var(--transition-time),
       opacity var(--transition-time),
@@ -106,8 +123,13 @@
   }
 
   .header__menu .menu-list {
-    flex-direction: column;
-    align-items: start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
     text-align: start;
     padding-top: 144px;
     padding-left: 15px;
@@ -119,13 +141,20 @@
 }
 
 .header__actions-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 60px;
   width: 36px;
   height: 36px;
   color: var(--main-color);
+  -webkit-transition: color var(--transition-time);
   transition: color var(--transition-time);
   
 }

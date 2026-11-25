@@ -6,6 +6,7 @@
   /* min-width 576 max-width 1200 */
   padding: clamp(40px, -3.846rem + 17.63vw, 150px) 0
     clamp(46px, -1.048rem + 10.9vw, 114px);
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
@@ -17,9 +18,16 @@
 
 .form__fieldset {
   border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   height: 100%;
   padding: 0;
 }
@@ -44,6 +52,38 @@
   margin-bottom: clamp(36px, 0.288rem + 5.45vw, 70px);
 }
 
+.form__input::-webkit-input-placeholder {
+  font-family: var(--font-family-sans);
+  font-weight: 400;
+  /* min-width 576 max-width 1200 */
+  font-size: clamp(12px, 0.404rem + 0.96vw, 18px);
+  color: var(--disable-color);
+}
+
+.form__input::-moz-placeholder {
+  font-family: var(--font-family-sans);
+  font-weight: 400;
+  /* min-width 576 max-width 1200 */
+  font-size: clamp(12px, 0.404rem + 0.96vw, 18px);
+  color: var(--disable-color);
+}
+
+.form__input:-ms-input-placeholder {
+  font-family: var(--font-family-sans);
+  font-weight: 400;
+  /* min-width 576 max-width 1200 */
+  font-size: clamp(12px, 0.404rem + 0.96vw, 18px);
+  color: var(--disable-color);
+}
+
+.form__input::-ms-input-placeholder {
+  font-family: var(--font-family-sans);
+  font-weight: 400;
+  /* min-width 576 max-width 1200 */
+  font-size: clamp(12px, 0.404rem + 0.96vw, 18px);
+  color: var(--disable-color);
+}
+
 .form__input::placeholder {
   font-family: var(--font-family-sans);
   font-weight: 400;
@@ -61,7 +101,9 @@
   padding: clamp(8px, 0.096rem + 1.12vw, 15px)
     clamp(25px, 0.524rem + 2.88vw, 43px);
   border-radius: 3px;
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-transition: background-color var(--transition-time);
   transition: background-color var(--transition-time);
 }
 
@@ -84,7 +126,9 @@
 }
 
 .form__checkbox-input {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   outline: none;
   position: absolute;
 }

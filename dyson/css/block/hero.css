@@ -5,9 +5,16 @@
 .hero__container {
   overflow: hidden;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: clamp(50px, -8.413rem + 32.05vw, 250px) 0 clamp(178px, 7.317rem + 10.58vw, 244px);
 }
 
@@ -44,9 +51,11 @@
   padding: clamp(7px, -0.082rem + 1.44vw, 16px) clamp(27px, 0.245rem + 4.01vw, 57px);
   border-radius: 3px;
   background-color: var(--accent-color);
+  -webkit-transition: opacity var(--transition-time);
   transition: opacity var(--transition-time);
   cursor: pointer;
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 @media (any-hover: hover) {
@@ -61,7 +70,9 @@
   bottom: 0;
   right: -50px;
   width: clamp(17.5rem, -9.327rem + 74.52vw, 46.563rem);
-  transform: translateY(clamp(0%, (100vw - 768px) * -0.2, 15%));
+  -webkit-transform: translateY(clamp(0%, (100vw - 768px) * -0.2, 15%));
+      -ms-transform: translateY(clamp(0%, (100vw - 768px) * -0.2, 15%));
+          transform: translateY(clamp(0%, (100vw - 768px) * -0.2, 15%));
   height: auto;
   pointer-events: none;
 }

@@ -16,6 +16,7 @@
 }
 
 .footer__content {
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -27,7 +28,12 @@
 }
 
 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -58,6 +64,7 @@
 
 .footer__title-link {
   margin-bottom: 30px;
+  -webkit-transition: color var(--transition-time);
   transition: color var(--transition-time);
   cursor: pointer;
 }
@@ -85,7 +92,8 @@
   cursor: pointer;
 }
 
-.content__shop, .content__logistics {
+.content__shop,
+.content__logistics {
   margin-bottom: 16px;
 }
 
@@ -113,6 +121,7 @@
   font-weight: 300;
   font-size: clamp(10px, 0.163rem + 1.28vw, 18px);
   color: var(--main-color);
+  -webkit-transition: color var(--transition-time);
   transition: color var(--transition-time);
 }
 
@@ -121,6 +130,7 @@
   font-size: clamp(12px, 0.058rem + 1.92vw, 24px);
   color: var(--main-color);
   font-weight: 700;
+  -webkit-transition: color var(--transition-time);
   transition: color var(--transition-time);
   margin-bottom: clamp(18px, -0.952rem + 5.77vw, 54px);
 }
@@ -144,6 +154,8 @@
 }
 
 .content__logistics-logo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: clamp(8px, -0.192rem + 1.92vw, 20px);
 }
@@ -163,11 +175,15 @@
 
 @media (width > 768px) {
   .content__rights {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
     grid-column: 3 / 5;
   }
 }
 @media (width <= 768px) {
   .content__rights {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-column: 1 / 3;
   }
 }
