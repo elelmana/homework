@@ -37,6 +37,12 @@
   transform: rotate(45deg);
 }
 
+.faq__summary-svg {
+  max-width: clamp(26px, 0.933rem + 1.92vw, 38px);
+  max-height: clamp(26px, 0.933rem + 1.92vw, 38px);
+  flex-shrink: 0;
+}
+
 .faq__details[open] .faq__summary-svg path {
   fill: var(--accent-color);
 }

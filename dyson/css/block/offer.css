@@ -81,6 +81,8 @@
   border-bottom-right-radius: 0;
 }
 
+
+
 .offer__summary {
   user-select: none;
   cursor: pointer;
@@ -105,6 +107,10 @@
   padding: 15px 25px;
   border: 1px solid var(--accent-color);
   border-top: none;
+}
+
+.offer__filter-buttton {
+  font-size: clamp(12px, 0.404rem + 0.96vw, 18px);
 }
 
 .offer__card {

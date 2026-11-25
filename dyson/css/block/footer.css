@@ -1,0 +1,173 @@
+.footer {
+  background-color: var(--black-color);
+}
+
+.footer__container {
+  /* min-width 576 max-width 1200 */
+  padding: clamp(16px, -0.962rem + 5.45vw, 50px) 0
+    clamp(20px, -0.942rem + 6.09vw, 58px);
+}
+
+.footer__logo-link {
+  display: block;
+  max-width: clamp(110px, 2.663rem + 11.7vw, 183px);
+  max-height: clamp(46px, 1.087rem + 4.97vw, 77px);
+  margin-bottom: clamp(6px, -0.721rem + 3.04vw, 25px);
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (width <= 768px) {
+  .footer__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (width > 768px) {
+  .content {
+    gap: 10px;
+  }
+}
+@media (width <= 768px) {
+  .content {
+    gap: 6px;
+  }
+}
+@media (width <= 576px) {
+  .content {
+    gap: 5px;
+  }
+}
+
+.footer__title-link,
+.content__title,
+.footer__title-link-mobile {
+  font-family: var(--font-family-namu);
+  font-weight: 900;
+  font-size: clamp(12px, 0.058rem + 1.92vw, 24px);
+  color: var(--main-color);
+}
+
+.footer__title-link {
+  margin-bottom: 30px;
+  transition: color var(--transition-time);
+  cursor: pointer;
+}
+
+@media (width <= 768px) {
+  .footer__title-link {
+    display: none;
+  }
+
+  .footer__title-link-mobile {
+    display: inline-block;
+  }
+}
+@media (width > 768px) {
+  .footer__title-link {
+    display: inline-block;
+  }
+
+  .footer__title-link-mobile {
+    display: none;
+  }
+}
+
+.footer__title-link-mobile {
+  cursor: pointer;
+}
+
+.content__shop, .content__logistics {
+  margin-bottom: 16px;
+}
+
+@media (width > 768px) {
+  .content__title {
+    margin-bottom: 4px;
+  }
+}
+@media (width <= 768px) {
+  .content__title {
+    margin-bottom: 2px;
+  }
+  .footer__title-link-mobile {
+    margin-bottom: 10px;
+  }
+}
+@media (width <= 576px) {
+  .content__title {
+    margin-bottom: 0px;
+  }
+}
+
+.content__link {
+  font-family: var(--font-family-sans);
+  font-weight: 300;
+  font-size: clamp(10px, 0.163rem + 1.28vw, 18px);
+  color: var(--main-color);
+  transition: color var(--transition-time);
+}
+
+.content__link-tel {
+  font-family: var(--font-family-sans);
+  font-size: clamp(12px, 0.058rem + 1.92vw, 24px);
+  color: var(--main-color);
+  font-weight: 700;
+  transition: color var(--transition-time);
+  margin-bottom: clamp(18px, -0.952rem + 5.77vw, 54px);
+}
+@media (width > 768px) {
+  .content__link-tel {
+    margin-top: 5px;
+  }
+}
+@media (width <= 768px) {
+  .content__link-tel {
+    margin-top: 0px;
+  }
+}
+
+@media (any-hover: hover) {
+  .content__link:hover,
+  .footer__title-link:hover,
+  .content__link-tel:hover {
+    color: var(--accent-color);
+  }
+}
+
+.content__logistics-logo-wrapper {
+  display: flex;
+  gap: clamp(8px, -0.192rem + 1.92vw, 20px);
+}
+
+.content__logistics-logo img {
+  max-width: clamp(18px, -0.144rem + 3.53vw, 40px);
+  max-height: clamp(18px, -0.144rem + 3.53vw, 40px);
+}
+
+.content__rights {
+  font-family: var(--font-family-sans);
+  font-weight: 300;
+  font-size: clamp(10px, 0.163rem + 1.28vw, 18px);
+  line-height: 150%;
+  color: var(--main-color);
+}
+
+@media (width > 768px) {
+  .content__rights {
+    grid-column: 3 / 5;
+  }
+}
+@media (width <= 768px) {
+  .content__rights {
+    grid-column: 1 / 3;
+  }
+}

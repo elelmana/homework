@@ -5,21 +5,11 @@
 .header__container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-@media (width > 992px) {
-  .header__container {
-    justify-content: center;
-  }
-}
-@media (width <= 992px) {
-  .header__container {
-    justify-content: space-between;
-  }
-}
 @media (width <= 992px) {
   .header__burger {
-    margin-left: 55px;
     margin-right: 40px;
   }
 }

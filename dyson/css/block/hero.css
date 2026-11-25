@@ -35,7 +35,7 @@
 }
 
 .hero__link {
-  max-width: clamp(141px, 3.389rem + 15.06vw, 235px);
+  /* max-width: clamp(141px, 3.389rem + 15.06vw, 235px); */
   /* minwidth 576px maxwidth 1200px*/
   font-size: clamp(16px, 0.538rem + 1.28vw, 24px);
   line-height: 100%;
@@ -46,6 +46,7 @@
   background-color: var(--accent-color);
   transition: opacity var(--transition-time);
   cursor: pointer;
+  align-self: flex-start;
 }
 
 @media (any-hover: hover) {

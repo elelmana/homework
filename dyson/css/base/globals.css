@@ -1,6 +1,7 @@
 .page {
   font-family: "Open Sans";
   font-weight: 400;
+  scroll-behavior: smooth;
 }
 
 .page__body {
@@ -25,21 +26,21 @@ button:focus-visible {
   outline-offset: 4px;
 }
 
-.title-46fz {
+.title-big {
   font-family: var(--font-family-namu);
   font-weight: 900;
   font-size: 46px;
   font-style: normal;
   line-height: 100%;
 }
-.title-42fz {
+.title-medium {
   font-family: var(--font-family-namu);
   font-weight: 900;
   font-size: 42px;
   font-style: normal;
   line-height: 100%;
 }
-.title-30fz {
+.title-small {
   font-family: var(--font-family-namu);
   font-weight: 900;
   font-size: 30px;
