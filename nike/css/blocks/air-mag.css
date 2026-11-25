@@ -22,18 +22,23 @@
 }
 
 .air-mag__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 13px;
 }
 
 .air-mag__desc::before {
   content: "";
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   width: 131px;
   height: 39px;
   display: block;
   background-image: url(../../icons/yellow-decor.svg);
-  transform: translateX(-13px);
+  -webkit-transform: translateX(-13px);
+      -ms-transform: translateX(-13px);
+          transform: translateX(-13px);
 }
 
 @media (width > 768px) {
@@ -44,11 +49,16 @@
 @media (width <= 768px) {
   .air-mag__desc {
     margin-bottom: 15px;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 .air-mag__info-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -59,7 +69,10 @@
 }
 @media (width <= 992px) {
   .air-mag__info-wrapper {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -68,15 +81,23 @@
 }
 
 .air-mag__info-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (width > 992px) {
   .air-mag__info-list {
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     max-width: 293px;
-    transform: translateY(71px);
+    -webkit-transform: translateY(71px);
+        -ms-transform: translateY(71px);
+            transform: translateY(71px);
     gap: 40px;
   }
 }
@@ -93,5 +114,7 @@
   width: 45px;
   height: 33px;
   background-image: url(../../icons/double-checkbox-icon.svg);
-  transform: translateX(-8px);
+  -webkit-transform: translateX(-8px);
+      -ms-transform: translateX(-8px);
+          transform: translateX(-8px);
 }
